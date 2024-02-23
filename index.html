@@ -3,26 +3,26 @@
     
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>nerf2nerf</title>
+    <title>AiSDF</title>
 
 
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:image" content="https://nerf2nerf.github.io/img/nerf2nerf_titlecard.jpg">
+    <meta property="og:image" content="https://AiSDF.github.io/img/AiSDF_titlecard.jpg">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nerf2nerf.github.io">
-    <meta property="og:title" content="nerf2nerf: Pairwise Registration of Neural Radiance Fields">
-    <meta property="og:description" content="We introduce a technique for pairwise registration of neural fields that extends classical optimization-based local registration (i.e. ICP) to operate on Neural Radiance Fields (NeRF) – neural 3D scene representations trained from collections ofcalibrated images. NeRF does not decompose illumination and color, so to make registration invariant to illumination, we introduce the concept of a “surface field” – a field distilled from a pre-trained NeRF model that measures the likelihood of a point being on the surface of an object. We then cast nerf2nerf registration as a robust optimization that iteratively seeks a rigid transformation that aligns the surface fields of the two scenes. We evaluate the effectiveness of our technique by introducing a dataset of pre-trained NeRF scenes – our synthetic scenes enable quantitative evaluations and comparisons to classical registration techniques, while our real scenes demonstrate the validity of our technique in real-world scenarios.">
+    <meta property="og:url" content="https://AiSDF.github.io">
+    <meta property="og:title" content="AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes">
+    <meta property="og:description" content="We introduce blah">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="nerf2nerf: Pairwise Registration of Neural Radiance Fields">
-    <meta name="twitter:description" content="We introduce a technique for pairwise registration of neural fields that extends classical optimization-based local registration (i.e. ICP) to operate on Neural Radiance Fields (NeRF) – neural 3D scene representations trained from collections ofcalibrated images. NeRF does not decompose illumination and color, so to make registration invariant to illumination, we introduce the concept of a “surface field” – a field distilled from a pre-trained NeRF model that measures the likelihood of a point being on the surface of an object. We then cast nerf2nerf registration as a robust optimization that iteratively seeks a rigid transformation that aligns the surface fields of the two scenes. We evaluate the effectiveness of our technique by introducing a dataset of pre-trained NeRF scenes – our synthetic scenes enable quantitative evaluations and comparisons to classical registration techniques, while our real scenes demonstrate the validity of our technique in real-world scenarios.">
-    <meta name="twitter:image" content="https://nerf2nerf.github.io/img/nerf2nerf_titlecard.jpg">
+    <meta name="twitter:title" content="AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes">
+    <meta name="twitter:description" content="We introduce blah">
+    <meta name="twitter:image" content="https://AiSDF.github.io/img/AiSDF_titlecard.jpg">
 
 
     <!-- mirror: F0%9F%AA%9E&lt -->
@@ -44,61 +44,51 @@
     <div class="container" id="header" style="text-align: center; margin: auto;">
         <div class="row" id="title-row" style="max-width: 100%; margin: 0 auto; display: inline-block">
             <h2 class="col-md-12 text-center" id="title">
-                <b>nerf2nerf</b>: Pairwise Registration of Neural Radiance Fields<br>
+                <b>AiSDF</b>: Structure-aware Neural Signed Distance Fields in Indoor Scenes<br>
                  <small>
-                    International Conference on Robotics and Automation (ICRA) 2023 
+                    IEEE Robotics and Automation Letters (RA-L)
                 </small>
             </h2>
         </div>
-        <div class="row" id="author-row" style="margin:auto;">
-            <div class="col-md-12 text-center" style="display: table; margin:auto">
-                <table class="author-table" id="author-table">
-                    <tr>
-			<td>
-				<table style="width:100%">
-                        		<td>
-                            			<a style="text-decoration:none" href="https://lilygoli.github.io/">
-                             			 Lily Goli
-                           			</a>
-                            			<br>University of Toronto<br>Vector Institute
-                        		</td>
-                        		<td>
-                            			<a style="text-decoration:none" href="http://drebain.com/">
-                              			Daniel Rebain
-                            			</a>
-                            			<br>University of <br>British Columbia
-                        		</td>
-                        		<td>
-                            			<a style="text-decoration:none" href="https://ca.linkedin.com/in/sara-sabour-63019132">
-                             			Sara Sabour
-                            			</a>
-                            			<br>University of Toronto<br>Vector Institute<br>Google Research
-                        		</td>
-				</table>
-			</td>	
-                    </tr>
-                    <tr>
-                        <td>
-				<table style="width:100%">
-					<td>
-                           		 	<a style="text-decoration:none" href="https://animesh.garg.tech">
-                                		Animesh Garg
-                            			</a>
-                            			<br>University of Toronto<br>NVIDIA
-                        			</td>
-                        		<td>
-                            			<a style="text-decoration:none" href="https://taiya.github.io/">
-                              			Andrea Tagliasacchi
-                            			</a>
-			                            <br>University of Toronto<br>Simon Fraser University<br>Google Research
-                        		</td>
-				</table>
-			</td>	
-                    </tr>
-                </table>
+        
+        <div class="row mt-3">
+            <div class="col-md-2"></div>
+            <div class="col text-center">
+                <a href="https://github.com/Syniez">
+                    Jongsung Lee
+                </a><sup>1, *</sup>
             </div>
+            <div >
+                <a href="https://threedv.github.io">
+                    Gyeongsu Cho
+                </a><sup>1, *</sup>
+            </div>
+            <div class="col text-center">
+                <a href="https://github.com/Jeongin-park">
+                    Jeongin Park
+                </a><sup>1</sup>
+            </div>
+            <div class="col text-center">
+                <a href="https://github.com/kimkj38">
+                    Kyongjun Kim
+                </a><sup>1</sup>
+            </div>
+            <div class="col text-center">
+                <a href="https://github.com/solee7650">
+                    Seongoh Lee
+                </a><sup>1</sup>
+            </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
+    <br>
+    <div class="col text-center">
+        <span><sup>1</sup> Ulsan National Institute of Science & Technology &nbsp;&nbsp;</span>
+    </div>
+    <div class="col text-center">
+        <span><sup>*</sup> Equal contribution (alphabet order) &nbsp;&nbsp;</span>
+    </div>
+
     <script>
         document.getElementById('author-row').style.maxWidth = document.getElementById("title-row").clientWidth + 'px';
     </script>
@@ -108,36 +98,36 @@
 		
                     <ul class="list-unstyled">
                         <li class="col-sm-2 ">
-                            <a href="https://arxiv.org/abs/2211.01600">
+                            <a href="https://github.com/AiSDF/AiSDF.github.io/raw/main/AiSDF_paper.pdf">
                             <img src="./img/paper_image.jpg" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
-                        <li class="col-sm-2">
+                        <!-- <li class="col-sm-2">
                             <a href="https://youtu.be/S071rGezdNM">
                             <img src="./img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                             </a>
-                        </li>
-                        <li class="col-sm-2">
+                        </li> -->
+                        <!-- <li class="col-sm-2">
                             <a href="https://drive.google.com/drive/folders/1jNpwAv1T1ntjIHUMJ1wABePA2Z8_nRRQ?usp=sharing" target="_blank">
                             <image src="img/database_icon.png" height="60px">
                                 <h4><strong>NeRF Dataset</strong></h4>
                             </a>
-                        </li>                          
+                        </li>                           -->
                         <li class="col-sm-2">
-                            <a href="https://github.com/nerf2nerf/nerf2nerf" target="_blank">
+                            <a href="https://github.com/AiSDF/AiSDF" target="_blank">
                             <image src="img/github.png" height="60px">
-                                <h4><strong>Code</strong></h4>
+                                <h4><strong>Code(comming soon)</strong></h4>
                             </a>
                         </li>
-			<li class="col-sm-2">
-                            <a href="https://github.com/nerf2nerf/nerf2nerf.github.io/raw/main/nerf2nerf_supplementary.pdf" target="_blank">
+			<!-- <li class="col-sm-2">
+                            <a href="https://github.com/AiSDF/AiSDF.github.io/raw/main/AiSDF_supplementary.pdf" target="_blank">
                             <image src="img/supplementary_icon.png" height="60px">
                                 <h4><strong>Supplementary Material</strong></h4>
                             </a>
                         </li>	
-                    </ul>
+                    </ul> -->
                 </div>
         </div>
 
@@ -146,7 +136,7 @@
                 
                 <div class="text-center">
                     
-                        <img src="./img/teaser.png" width="100%">
+                        <img src="./img/teaser.jpg" width="100%">
                    
                 </div>
             </div>
@@ -161,7 +151,7 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-We introduce a technique for pairwise registration of neural fields that extends classical optimization-based local registration (i.e. ICP) to operate on Neural Radiance Fields (NeRF) – neural 3D scene representations trained from collections ofcalibrated images. NeRF does not decompose illumination and color, so to make registration invariant to illumination, we introduce the concept of a “surface field” – a field distilled from a pre-trained NeRF model that measures the likelihood of a point being on the surface of an object. We then cast nerf2nerf registration as a robust optimization that iteratively seeks a rigid transformation that aligns the surface fields of the two scenes. We evaluate the effectiveness of our technique by introducing a dataset of pre-trained NeRF scenes – our synthetic scenes enable quantitative evaluations and comparisons to classical registration techniques, while our real scenes demonstrate the validity of our technique in real-world scenarios.
+We introduce a technique for pairwise registration of neural fields that extends classical optimization-based local registration (i.e. ICP) to operate on Neural Radiance Fields (NeRF) – neural 3D scene representations trained from collections ofcalibrated images. NeRF does not decompose illumination and color, so to make registration invariant to illumination, we introduce the concept of a “surface field” – a field distilled from a pre-trained NeRF model that measures the likelihood of a point being on the surface of an object. We then cast AiSDF registration as a robust optimization that iteratively seeks a rigid transformation that aligns the surface fields of the two scenes. We evaluate the effectiveness of our technique by introducing a dataset of pre-trained NeRF scenes – our synthetic scenes enable quantitative evaluations and comparisons to classical registration techniques, while our real scenes demonstrate the validity of our technique in real-world scenarios.
                 </p>
             </div>
         </div>
@@ -378,13 +368,12 @@ field with a zero-mean Gaussian of isotropic covariance matrix <img src="./img/c
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{goli2023nerf2nerf,
-  title={nerf2nerf: Pairwise registration of neural radiance fields},
-  author={Goli, Lily and Rebain, Daniel and Sabour, Sara and Garg, Animesh and Tagliasacchi, Andrea},
-  booktitle={International Conference on Robotics and Automation (ICRA)},
-  year={2023},
-  organization={IEEE}
-}</textarea>
+
+  title= AiSDF: Structure-aware Neural Signed Distance Fields in Indoor Scenes
+  author= Inha, Lee and jaehoon, Jang and Minje, Kim and Kyungdon Joo
+  journal= IEEE Robotics and Automation Letters, 2024
+  year={2024}
+</textarea>
                 </div>
             </div>
         </div>
